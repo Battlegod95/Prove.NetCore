@@ -45,7 +45,7 @@ namespace Prove_dotnet_core
                 //context.Request.Query[id]; ricorda che non va lo / dopo localhost:5001 ma ? e poi nome=cosa vuoi scrivere
             //});
 
-            //app.UseMvcWithDefaultRoute(); fa quello che vedi sotto tranne per i services
+            //app.UseMvcWithDefaultRoute(); fa quello che vedi sotto
             app.UseMvc(routeBuilder =>
             {
                 routeBuilder.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
