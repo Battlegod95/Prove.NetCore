@@ -16,7 +16,7 @@ namespace Prove_dotnet_core.Controllers
             CourseService courseService = new CourseService(); //creazione dell'istanza di Courseservice
             List<CourseViewModel> courses = courseService.GetServices(); //abbiamo invocato l'istanza che serve per ricevere la lista dei corsi
             return View(courses); //gli passiamo l'istanza di courses appena richiamata con il services da presentare nella view
-
+            //se vogliamo predisporre la view per presentare determinati tipi doggetto
         }
 
         public IActionResult Detail(string id)
