@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Prove_dotnet_core.Models.Services.Application;
 
 namespace Prove_dotnet_core
 {
@@ -17,6 +18,7 @@ namespace Prove_dotnet_core
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<CourseService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
